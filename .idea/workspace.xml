@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17912ece-4c2e-42ed-aec3-9d564023b80e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huffman/FileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huffman/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huffman/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/BinaryConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/FrequencyCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/huff-comp-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/huff-comp-util.iml" afterDir="false" />
-    </list>
+    <list default="true" id="17912ece-4c2e-42ed-aec3-9d564023b80e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
