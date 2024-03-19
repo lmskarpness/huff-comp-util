@@ -17,8 +17,7 @@ public class HuffmanEncoder {
 
     public HuffmanEncoder(String filename) throws FileNotFoundException {
         this.filename = filename;
-        this.fileReader = new FileReader(filename);
-        this.tree = new HuffmanTree(fileReader);
+        this.tree = new HuffmanTree(filename);
         this.binConverter = new BinaryConverter();
         processFile();
     }

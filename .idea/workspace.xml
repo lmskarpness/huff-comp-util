@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17912ece-4c2e-42ed-aec3-9d564023b80e" name="Changes" comment="" />
+    <list default="true" id="17912ece-4c2e-42ed-aec3-9d564023b80e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/FileHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/FileHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanEncoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanEncoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/utils/FrequencyCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/utils/FrequencyCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/FrequencyCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/FrequencyCounter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +33,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1000bbad-d4e8-42d3-8dfe-b83d7ce0a759" />
+        <option name="url" value="https://github.com/lmskarpness/huff-comp-util.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2dsNIuc1m6qHT2L04OIrdckmXB8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,6 +99,25 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/huffman/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/huffman/HuffmanTree.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/utils/FrequencyCounter.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.huffman.HuffmanTree" memberName="huffmanNodes" />

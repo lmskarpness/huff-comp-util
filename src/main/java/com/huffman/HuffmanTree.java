@@ -2,8 +2,6 @@ package com.huffman;
 
 import com.utils.FrequencyCounter;
 
-import java.io.FileReader;
-
 public class HuffmanTree {
 
     public final int ASCII_RANGE = 256;
@@ -13,8 +11,8 @@ public class HuffmanTree {
     private HuffmanNode treeRoot;
     private int queueSize = 0;
 
-    public HuffmanTree(FileReader fileReader) {
-        FrequencyCounter frequencyCounter = new FrequencyCounter(fileReader);
+    public HuffmanTree(String filename) {
+        FrequencyCounter frequencyCounter = new FrequencyCounter(filename);
         this.asciiFrequencies = frequencyCounter.getFrequencies();
         this.huffmanNodes = new HuffmanNode[ASCII_RANGE];
         this.huffmanCodes = new String[ASCII_RANGE];
