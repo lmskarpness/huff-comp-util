@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17912ece-4c2e-42ed-aec3-9d564023b80e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanLeaf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/FileHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/FileHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanEncoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanEncoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/HuffmanTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/huffman/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/huff-comp-util/com/utils/FrequencyCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/huff-comp-util/com/utils/FrequencyCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/HuffmanTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huffman/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huffman/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/FrequencyCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/FrequencyCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +27,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -53,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JAVA"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.huffman.Main" />
@@ -105,11 +98,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/huffman/Main.java</url>
           <line>10</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/huffman/HuffmanTree.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/utils/FrequencyCounter.java</url>

@@ -46,8 +46,9 @@ public class HuffmanTree {
                 }
             }
 
-            HuffmanNode sumNode = new HuffmanNode('0',
-                    huffmanNodes[min1Idx].getFrequency() + huffmanNodes[min2Idx].getFrequency());
+            int frequency = huffmanNodes[min1Idx].getFrequency() + huffmanNodes[min2Idx].getFrequency();
+
+            HuffmanNode sumNode = new HuffmanNode(frequency);
             sumNode.setLeftChild(huffmanNodes[min1Idx]);
             sumNode.setRightChild(huffmanNodes[min2Idx]);
 
@@ -58,25 +59,30 @@ public class HuffmanTree {
         this.treeRoot = huffmanNodes[0];
     }
 
+    private boolean isLeafNode(HuffmanNode node) {
+        if (node.getLeftChild() == null && node.getRightChild() == null) return true;
+        if (node instanceof HuffmanLeaf) return true;
+        return false;
+    }
+
     private void populateNodeQueue() {
         for (int i = 0; i < ASCII_RANGE; i++) {
             if (asciiFrequencies[i] > 0) {
-                huffmanNodes[this.queueSize++] = new HuffmanNode((char) i, asciiFrequencies[i]);
+                huffmanNodes[this.queueSize++] = new HuffmanLeaf(asciiFrequencies[i], (char) i);
             }
         }
     }
 
     private void generateHuffmanCodes(HuffmanNode node, String code) {
         if (node.getLeftChild() != null) {
-            code += '0';
-            generateHuffmanCodes(node.getLeftChild(), code);
+            generateHuffmanCodes(node.getLeftChild(), code + '0');
         }
         if (node.getRightChild() != null) {
-            code += '1';
-            generateHuffmanCodes(node.getRightChild(), code);
+            generateHuffmanCodes(node.getRightChild(), code + '1');
         }
-        if (node.getLeftChild() == null && node.getRightChild() == null) {
-            huffmanCodes[(int) node.getSymbol()] = code;
+        if (isLeafNode(node)) {
+            HuffmanLeaf leaf = (HuffmanLeaf) node;
+            huffmanCodes[(int) leaf.getSymbol()] = code;
         }
     }
 }
