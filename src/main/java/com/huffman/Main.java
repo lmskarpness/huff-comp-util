@@ -16,6 +16,7 @@ public class Main {
                     System.out.println(code);
                 }
             }
+            System.out.println("Byte Array:");
             for (byte data : he.getEncodedByteArray()) {
                 System.out.println(data);
             }

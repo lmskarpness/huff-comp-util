@@ -2,20 +2,14 @@ package com.huffman;
 
 public class HuffmanNode {
 
-    private char symbol;
     private int frequency;
     private HuffmanNode left;
     private HuffmanNode right;
 
-    public HuffmanNode(char symbol, int frequency) {
-        this.symbol = symbol;
+    public HuffmanNode(int frequency) {
         this.frequency = frequency;
         this.left = null;
         this.right = null;
-    }
-
-    public char getSymbol() {
-        return this.symbol;
     }
 
     public int getFrequency() {
