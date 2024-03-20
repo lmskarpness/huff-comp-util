@@ -1,6 +1,6 @@
 package com.huffman;
 
-import com.utils.BinaryConverter;
+import com.utils.BinaryWriter;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -9,16 +9,17 @@ import java.io.IOException;
 
 public class HuffmanEncoder {
 
-    private BinaryConverter binConverter;
+    private BinaryWriter binConverter;
     private byte[] encodedByteArray;
+    private int headerSizeBits = 0;
     private HuffmanTree tree;
-    private FileReader fileReader;
     private String filename;
 
     public HuffmanEncoder(String filename) throws FileNotFoundException {
         this.filename = filename;
         this.tree = new HuffmanTree(filename);
-        this.binConverter = new BinaryConverter();
+        this.binConverter = new BinaryWriter();
+        headerSizePreprocessor(tree.getTree());
         processFile();
     }
 
@@ -31,6 +32,9 @@ public class HuffmanEncoder {
     }
 
     private void processFile() {
+        writeHeaderSize();
+        processTreeToHeader(tree.getTree());
+        binConverter.flushBitBuffer();
         try {
             String line;
             FileReader reader = new FileReader(filename);
@@ -47,6 +51,36 @@ public class HuffmanEncoder {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    private void writeHeaderSize() {
+        int bytes = this.headerSizeBits / 8;
+        binConverter.writeIntToStream(bytes);
+    }
+
+    private void headerSizePreprocessor(HuffmanNode root) {
+        if (root instanceof HuffmanLeaf) {
+            // 1 bit ('1' indicator) + 1 byte (symbol)
+            int size = 9;
+            this.headerSizeBits += size;
+        } else {
+            this.headerSizeBits++;
+            headerSizePreprocessor(root.getLeftChild());
+            headerSizePreprocessor(root.getRightChild());
+        }
+    }
+
+    public void processTreeToHeader(HuffmanNode root) {
+        if (root instanceof HuffmanLeaf) {
+            char symbol = ((HuffmanLeaf) root).getSymbol();
+            binConverter.writeBitToStream('1');
+            binConverter.writeCharToStream(symbol);
+
+        } else {
+            binConverter.writeBitToStream('0');
+            processTreeToHeader(root.getLeftChild());
+            processTreeToHeader(root.getRightChild());
         }
     }
 

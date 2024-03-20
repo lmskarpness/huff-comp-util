@@ -18,11 +18,18 @@ public class Main {
             }
             System.out.println("Byte Array:");
             for (byte data : he.getEncodedByteArray()) {
-                System.out.println(data);
+                System.out.println(String.format("%02X: ", data) + " " + data);
             }
 
             FileHandler fh = new FileHandler(out);
             fh.createCompressedFile(he.getEncodedByteArray());
+
+            System.out.println("Data Array:");
+            HuffmanDecoder hd = new HuffmanDecoder(out);
+            for (byte data : hd.getData()) {
+                System.out.println(String.format("%02X: ", data) + " " + data);
+            }
+
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
